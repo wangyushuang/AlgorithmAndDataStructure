@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AlgorithmAndDataStructure:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="AlgorithmAndDataStructure.war">
+      <element id="artifact" artifact-name="AlgorithmAndDataStructure:war exploded" />
+    </root>
+  </artifact>
+</component>

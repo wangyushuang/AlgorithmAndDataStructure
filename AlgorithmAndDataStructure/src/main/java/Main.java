@@ -2,39 +2,17 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new B(23).a);
 
+        A a1=new A();
+        A a2=a1;
+        a1=null;
+        System.out.println(a1);
+        System.out.println(a2);
     }
-}
-
-class A{
-    public static int a=10;
-    static{
-        System.out.println("static A");
-    }
-    {
-        System.out.println("common A");
-    }
-
-    public A(int c){
-        System.out.println("cons A");
-    }
-
-    public A(int c,int d){
-
-    }
-}
-
-class B extends A{
-    public static int a=22;
-    static {
-        System.out.println("static B");
-    }
-    {
-        System.out.println("common B");
-    }
-    public B(int c){
-        super(c,2);
-        System.out.println("cons B");
+    static class A{
+        int a =11;
+        public String toString(){
+            return new String(""+a);
+        }
     }
 }
